@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
+app.use(express.static('public'));
 
 // if a number is found, make a GET request to the numbers API to retrieve info about that number
 app.post('/chatbot', (req, res) => {
