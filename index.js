@@ -5,7 +5,7 @@ $(document).ready(function() {
 		const message = $('#chatbot-input').val();
 		$.ajax({
 			type: 'POST',
-			url: 'http://localhost:3000/chatbot',
+			url: 'https://lab-2-amahnnachi-davidchika.onrender.com',
 			data: {
 				message: message
 			},
